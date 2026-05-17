@@ -1,31 +1,70 @@
 # DSA210 Term Project
-This repository contains the code and analysis for my DSA210 term project.
+## Analyzing the Relationship Between Daily Habits and Productivity
 
-## Topic
-Analyzing the relationship between daily habits and productivity.
+This repository contains the code, dataset, visualizations, and reports for my DSA210 term project.
 
-## Description
-In this project, I collected my own daily data over several weeks. 
-The dataset includes variables such as sleep duration, study time, phone usage, mood, and energy levels.  
-The goal is to understand which factors have the strongest impact on productivity.
+## Project Overview
 
-## What I did
-- Collected and organized a personal dataset
-- Performed exploratory data analysis (EDA)
-- Visualized relationships between variables
-- Applied correlation analysis and hypothesis testing
-- Built a simple linear regression model
+The purpose of this project is to investigate how daily habits affect personal productivity.  
+To explore this relationship, I collected and analyzed my own daily behavioral data over a 56-day period (March 10 – May 5, 2026).
 
-## Key Results
-- Energy level is the strongest predictor of productivity
-- Morning mood also has a positive effect
-- Phone usage does not show a strong relationship
+The dataset includes variables such as:
+- Sleep duration
+- Sleep quality
+- Morning mood
+- Energy level
+- Study hours
+- Phone usage
+- Stress level
+- Weekend status
+- Productivity score
+
+The project combines exploratory data analysis, statistical hypothesis testing, and machine learning methods to identify the most influential factors related to productivity.
+
+## Methods Used
+
+### Exploratory Data Analysis (EDA)
+- Scatter plots
+- Correlation matrix
+- Histograms
+- Boxplots
+- Time-series visualization
+
+### Statistical Analysis
+- Pearson correlation
+- Spearman correlation
+- Mann-Whitney U test
+
+### Machine Learning Models
+- Linear Regression
+- Random Forest Regressor
+- Logistic Regression
+- Random Forest Classifier
+
+## Key Findings
+
+- Energy level showed the strongest statistically significant positive relationship with productivity.
+- Phone usage had a significant negative relationship with productivity.
+- Random Forest models identified phone usage as the most important predictive feature.
+- Weekend productivity was slightly higher on average, but the difference was not statistically significant.
 
 ## Repository Structure
-data/ : dataset  
-notebooks/ : analysis notebook  
-figures/ : visualizations  
-docs/ : proposal and related documents  
 
-## How to run
-Open the notebook in the notebooks folder and run all cells.
+```text
+project-root/
+│
+├── data/
+│   └── data.csv
+│
+├── notebooks/
+│   └── productivity_analysis.ipynb
+│
+├── figures/
+│   └── plots_and_visualizations
+│
+├── docs/
+│   ├── proposal.pdf
+│   └── final_report.pdf
+│
+├── requirements.txt
+└── README.md
